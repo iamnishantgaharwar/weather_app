@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App By Nishant</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="heading">
+                <h1 class="heading-text">Weather App</h1>
+            </div>
+            <div class="searchInput">
+                <form onsubmit="getData(event)" class="searchData">
+                    <input class="inputBox" id="inputBox" type="text" placeholder="Enter the city name" />
+                    <button>Search</button>
+                  </form>
+            </div>
+            <!-- displaying country names -->
+            <section class="cityWeatherData">
+                <div class="countryDetails">
+                    <div class="cards">
+                        <p>Country Name</p>
+                        <p id="countryName">___</p>
+                    </div>
+                    <div class="cards">
+                        <p>State Name</p>
+                        <p id="stateName">___</p>
+                    </div>
+                    <div class="cards">
+                        <p>City Name</p>
+                        <p id="cityName">___</p>
+                    </div>
+                </div>
+                <!-- displaying weather status -->
+                <div class="weatherDetails">
+                    <div class="cards">
+                        <p>Humidity</p>
+                        <p id="humidity">___</p>
+                    </div>
+                    <div class="cards">
+                        <p>Wind Speed</p>
+                        <p id="windSpeed">___</p>
+                    </div>
+                    <div class="cards">
+                        <p>Temperature</p>
+                        <p id="temperature">___</p>
+                    </div>
+                    <div class="cards">
+                        <img width="20px" src="" id="logoImage" alt="" srcset="">
+                        <p id="weatherStatus">___</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
