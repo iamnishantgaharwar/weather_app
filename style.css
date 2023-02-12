@@ -69,7 +69,9 @@
 }
 .cards p{
     text-align: center;
-    font-weight: 400;
+}
+.cards p:nth-child(odd){
+    font-weight: 700;
 }
 .cards img{
     position: relative;
@@ -100,6 +102,9 @@
     .cards {
         margin: 2px;
         font-size: 15px ;
+    }
+    .cards p:nth-child(odd){
+        font-weight: 700;
     }
 
 }
