@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Poppins;
 }
 :root{
     --black: #0D0D0D;
@@ -12,6 +11,7 @@
     display: flex;
     justify-content: center;
     height: 100vh;
+    font-family: Poppins;
     align-items: center;
     background-color: #758283;
 }
@@ -75,4 +75,31 @@
     position: relative;
     margin: auto;
     display: flex;
+}
+
+/* Mobile Design */
+
+@media only screen and (max-width: 640px){
+    .heading-text{
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+    }
+    .container{
+        padding: 0px 60px;
+    }
+    .countryDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    .weatherDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards {
+        margin: 2px;
+        font-size: 15px ;
+    }
+
 }
