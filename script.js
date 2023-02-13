@@ -1,4 +1,4 @@
-window.fetchKey = '<%= process.env.fetchKey %>';
+window.fetchKey = '2efdcc3b712b4f06a94110043231102';
 const key = "fetchKey";
 const url = "https://api.weatherapi.com/v1";
 const currentWeather = "/current.json?key=";
