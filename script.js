@@ -1,6 +1,3 @@
-const config = require('./config.js');
-const url = "https://api.weatherapi.com/v1";
-const currentWeather = "/current.json?key=";
 let data;
 
 const inputBox = document.getElementById("inputBox");
@@ -12,6 +9,10 @@ const windSpeed = document.getElementById("windSpeed");
 const temprature = document.getElementById("temperature");
 const logoImage = document.getElementById("logoImage");
 const weatherStatus = document.getElementById("weatherStatus");
+
+const config = require('./config.js');
+const url = "https://api.weatherapi.com/v1";
+const currentWeather = "/current.json?key=";
 
 const getData = async (event) => {
     event.preventDefault();
