@@ -1,4 +1,5 @@
-const key = "2efdcc3b712b4f06a94110043231102";
+const secretKey = process.env.secretKey;
+// const secretKey = "2efdcc3b712b4f06a94110043231102";
 const url = "https://api.weatherapi.com/v1";
 const currentWeather = "/current.json?key=";
 let data;
@@ -21,7 +22,7 @@ const getData = async (event) => {
     }
     const city = inputBox.value;
     const fetchData = await fetch(
-        `${url}${currentWeather}${key}&q=${city}`
+        `${url}${currentWeather}${secretKey}&q=${city}`
     );
     const orgData = await fetchData.json();
     data = orgData
